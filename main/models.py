@@ -7,3 +7,14 @@ class Item(models.Model):
     
     def __str__(self):
         return self.nome
+    
+    
+class Funcionarios(models.Model):
+    nomeFuncionario = models.CharField(max_length=100)
+    dataNascimento = models.DateField()
+    eMail = models.EmailField(max_length=254)
+    salario = models.FloatField()
+    
+def __str__(self):
+    return self.nomeFuncionario
+
